@@ -21,13 +21,13 @@ footer h3 { font-size: 2.5em; color: grey; }
     left: 0;
     z-index: 1;
 
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(25px);
 
     width: 95%;
     height: 101vh;
 
-    padding: 3%;
+    padding: 4%;
     margin: auto;
 
     display: grid;
