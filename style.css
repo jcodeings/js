@@ -1,5 +1,5 @@
 * { box-sizing: border-box; font-family: sans-serif}
-html { overflow: hidden; }
+html { overflow-x: hidden; }
 
 /*  GRID - - - --- - - - GRID - - - --- - - - GRID - - - --- - - - GRID  */
 body {
