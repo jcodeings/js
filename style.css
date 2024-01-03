@@ -33,13 +33,6 @@ footer h3 { font-size: 2.5em; color: lightgray; }
     height: 101vh;
 }
 
-@media only screen and (orientation: landscape) {
-    header h3 { font-size: 1.5em; color: lightgray; }
-    footer h3 { font-size: 1.5em; color: lightgray; }
-    .grid {width: 50%; height: 230vh; margin: auto}
-    body { height: auto}
-}
-
 /*  ITEMS - - - --- - - - ITEMS - - - --- - - - ITEMS - - - --- - - - ITEMS  */
 #first-widget   {
     grid-area: span 4 / span 7;
@@ -124,6 +117,109 @@ footer h3 { font-size: 2.5em; color: lightgray; }
 
     width: 100%;
     height: 100%;
+}
+
+@media only screen and (orientation: landscape) {
+    header h3 { font-size: 1.5em; color: lightgray; }
+    footer h3 { font-size: 1.5em; color: lightgray; }
+
+    .grid {
+        width: 100%;
+        height: 201vh;
+
+        margin: auto;
+
+        grid-template-columns: repeat(14, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-column-gap: 0.5%
+    }
+    body { height: auto}
+
+    #first-widget   {
+        grid-area: span 4 / span 5;
+        display: flex;
+
+        background-image: linear-gradient(to right, mediumblue, blue);
+        color: ghostwhite;
+
+        border-radius: 14px;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    #second-widget  {
+        grid-area: span 2 / span 3;
+        display: flex;
+
+        background-image: linear-gradient(to right, deepskyblue, mediumturquoise);
+
+        border-radius: 14px;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    #third-widget   {
+        grid-column: 6 / 9;
+        grid-row: 3 / 5;
+        display: flex;
+
+        background-image: linear-gradient(to left, deepskyblue, mediumturquoise);
+
+        border-radius: 14px;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    #fourth-widget  {
+        grid-area: span 4 / span 6;
+        display: flex;
+
+        background-image: linear-gradient(to left, orange, orangered);
+
+        border-radius: 14px;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    #fifth-widget   {
+        grid-area: span 3 / span 6;
+        display: flex;
+
+        background-image: linear-gradient(to bottom, rebeccapurple, mediumpurple);
+
+        border-radius: 14px;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    #sixth-widget   {
+        grid-area: span 3 / span 8;
+        display: flex;
+
+        background-image: linear-gradient(to top, rebeccapurple, mediumpurple);
+
+        border-radius: 14px;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    #seventh-widget {
+        grid-area: span 3 / span 14;
+        display: flex;
+
+        background-image: linear-gradient(to top, deeppink, hotpink);
+
+        border-radius: 14px;
+
+        width: 100%;
+        height: 100%;
+    }
 }
 
 /*  MEDIA Qs - - - --- - - - MEDIA Qs - - - --- - - - MEDIA Qs - - - --- - - - MEDIA Qs
