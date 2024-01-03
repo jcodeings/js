@@ -36,7 +36,7 @@ footer h3 { font-size: 2.5em; color: lightgray; }
 @media only screen and (orientation: landscape) {
     header h3 { font-size: 1.5em; color: lightgray; }
     footer h3 { font-size: 1.5em; color: lightgray; }
-    .grid {width: 75%; height: 200vh; margin: auto}
+    .grid {width: 65%; height: 200vh; margin: auto}
 }
 
 /*  ITEMS - - - --- - - - ITEMS - - - --- - - - ITEMS - - - --- - - - ITEMS  */
