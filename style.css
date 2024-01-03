@@ -24,6 +24,7 @@ footer h3 { font-size: 2.5em; color: grey; }
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(25px);
 
+    border: 1px solid transparent;
     border-radius: 30px;
 
     width: 95%;
@@ -128,7 +129,7 @@ footer h3 { font-size: 2.5em; color: grey; }
     height: 100%;
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (orientation: landscape) { /*  LANDSCAPE ! LANDSCAPE ! LANDSCAPE  */
     header h3 { font-size: 1.5em; color: lightgray; }
     footer h3 { font-size: 1.5em; color: lightgray; }
 
@@ -136,15 +137,16 @@ footer h3 { font-size: 2.5em; color: grey; }
         width: 100%;
         height: 201vh;
 
+        padding: 2%;
         margin: auto;
 
         border-radius: 30px;
 
         grid-template-columns: repeat(14, 1fr);
         grid-template-rows: repeat(10, 1fr);
-        grid-column-gap: 0.5%
+        grid-column-gap: 0.5%;
     }
-    body { height: auto}
+    body { height: auto; padding: 2%}
 
     #first-widget   { grid-area: span 4 / span 5; }
     #second-widget  { grid-area: span 2 / span 3; }
