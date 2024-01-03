@@ -1,12 +1,11 @@
 * { box-sizing: border-box; font-family: sans-serif}
-html { overflow-x: hidden; overflow-y: scroll}
-
+html { overflow-x: hidden; overflow-y: scroll }
 body {
     max-width: 100%;
     height: auto;
 
     margin: 0;
-    padding: 0;
+    padding: 1%;
 
     background-color: black;
     color: black;
@@ -19,11 +18,10 @@ footer h3 { font-size: 2.5em; color: grey; }
 .grid {
     top: 0;
     left: 0;
-    z-index: 1;
 
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(25px);
-    
+
     border-radius: 30px;
 
     width: 95%;
@@ -55,7 +53,6 @@ footer h3 { font-size: 2.5em; color: grey; }
     width: 100%;
     height: 100%;
 }
-
 #second-widget  {
     grid-area: span 2 / span 5;
     display: flex;
@@ -67,7 +64,6 @@ footer h3 { font-size: 2.5em; color: grey; }
     width: 100%;
     height: 100%;
 }
-
 #third-widget   {
     grid-area: span 2 / span 5;
     display: flex;
@@ -79,7 +75,6 @@ footer h3 { font-size: 2.5em; color: grey; }
     width: 100%;
     height: 100%;
 }
-
 #fourth-widget  {
     grid-area: span 3 / span 12;
     display: flex;
@@ -91,7 +86,6 @@ footer h3 { font-size: 2.5em; color: grey; }
     width: 100%;
     height: 100%;
 }
-
 #fifth-widget   {
     grid-area: span 3 / span 5;
     display: flex;
@@ -103,7 +97,6 @@ footer h3 { font-size: 2.5em; color: grey; }
     width: 100%;
     height: 100%;
 }
-
 #sixth-widget   {
     grid-area: span 3 / span 7;
     display: flex;
@@ -115,7 +108,6 @@ footer h3 { font-size: 2.5em; color: grey; }
     width: 100%;
     height: 100%;
 }
-
 #seventh-widget {
     grid-area: span 3 / span 12;
     display: flex;
@@ -138,8 +130,6 @@ footer h3 { font-size: 2.5em; color: grey; }
 
         padding: 2%;
         margin: auto;
-
-        border-radius: 30px;
 
         grid-template-columns: repeat(14, 1fr);
         grid-template-rows: repeat(10, 1fr);
