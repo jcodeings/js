@@ -12,33 +12,32 @@ body {
     color: black;
 }
 
-header h3 { font-size: 2.5em; color: lightgray; }
-footer h3 { font-size: 2.5em; color: lightgray; }
+header h3 { font-size: 2.5em; color: grey; }
+footer h3 { font-size: 2.5em; color: grey; }
 
 /*  GRID - - - --- - - - GRID - - - --- - - - GRID - - - --- - - - GRID  */
 .grid {
     top: 0;
     left: 0;
+    z-index: 1;
 
-    display: grid;
-    grid-auto-flow: dense;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+
+    width: 95%;
+    height: 101vh;
 
     padding: 3%;
     margin: auto;
 
+    display: grid;
+
+    grid-auto-flow: dense;
     grid-row-gap: 0.75%;
     grid-column-gap: 1%;
 
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-
-    width: 95%;
-    height: 101vh;
-}
-.effect {
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(25px);
 }
 
 /*  ITEMS - - - --- - - - ITEMS - - - --- - - - ITEMS - - - --- - - - ITEMS  */
@@ -137,13 +136,12 @@ footer h3 { font-size: 2.5em; color: lightgray; }
 
         margin: auto;
 
-        border-radius: 4px;
+        border-radius: 30px;
 
         grid-template-columns: repeat(14, 1fr);
         grid-template-rows: repeat(10, 1fr);
         grid-column-gap: 0.5%
     }
-    .effect { width: 95% }
     body { height: auto}
 
     #first-widget   { grid-area: span 4 / span 5; }
